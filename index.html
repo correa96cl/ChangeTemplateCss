@@ -1,0 +1,82 @@
+<!doctype html>
+<html lang="pt-br">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width">
+	<title>Treinos funcionais</title>
+	<link id="tema_css" rel="stylesheet" href="css/estilo-black.css">
+	<link id="tema_css_exercicio" rel="stylesheet" href="css/exercicios-black.css">
+	
+	
+</head>
+<body>
+
+	<header>
+		<div class="container">
+
+			<button class="menu-abrir">Abre Menu</button>
+			<h1 class="logo">
+				<img src="./img/logo.png" alt="Jose Carlos Freitas Cruz">
+
+			</h1>
+			<nav class="barra-nav">
+			
+				<button class="menu-fechar">Fecha Menu</button>
+
+				<ul class="menu-principal">
+				
+				
+					<li><a href="#" class="links-menu-principal">Serviços</a>
+					<li><a href="esportes.html" class="links-menu-principal">Contato</a>
+				</ul>
+
+				<form class="busca">
+					<input type="search" id="campo-busca">
+					<button type="submit">Buscar</button>
+				</form>
+				
+			</nav>
+		</div>
+	</header>
+
+	<main class="destaques container">
+	<select id="temas" onchange="cambiarTemaCss(this.value);">
+  <option value="dia">Dia</option>
+  <option selected="selected" value="noite">Noite</option>
+</select>
+				<div class="course-card">
+                    
+                    <div >
+                        <h4>Card</h4>
+                        <p>Detalhes de card.</p>
+                    </div>
+                </div>
+				
+				<div class="course-card">
+                    
+                    <div >
+                        <h4>Card</h4>
+                        <p>Detalhes de card.</p>
+                    </div>
+                </div>
+				
+				<div class="course-card">
+                    
+                    <div >
+                        <h4>Card</h4>
+                        <p>Detalhes de card.</p>
+                    </div>
+                </div>
+		
+
+	</main>
+	
+	<footer class="rodape">
+	
+	Contato: xxxx@hotmail.com
+	</footer>
+
+	<script src="js/menu.js"></script>
+	<script src="js/MudarTemplateCss.js"></script>
+</body>
+</html>
