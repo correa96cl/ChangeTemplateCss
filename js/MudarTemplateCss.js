@@ -1,23 +1,25 @@
 var temaElementoEstilo = document.getElementById('tema_css');
 var temaElementoExercicio = document.getElementById('tema_css_exercicio');
+var checkbox = document.getElementById('checkboxTemplate');
 console.log('#1 tema:', temaElementoEstilo.href);
 console.log('#1 tema EXERCICIO', temaElementoExercicio.href);
+console.log('#! check', checkbox.checked);
 
-function cambiarTemaCss(tema) {
-	console.log(tema);
+function cambiarTemaCss() {
+	console.log(checkbox.checked);
     var temaUrls = {
-        noite: './css/estilo-black.css',
-        dia: './css/estilo-white.css'
+        true: './css/estilo-black.css',
+        false: './css/estilo-white.css'
     };
 	var estiloExercicio ={ 
-		noite: './css/exercicios-black.css',
-        dia: './css/exercicios-white.css'
+		true: './css/exercicios-black.css',
+        false: './css/exercicios-white.css'
 	};
 	
-  var temaUrl = temaUrls[tema];
+  var temaUrl = temaUrls[checkbox.checked];
 	temaElementoEstilo.href = temaUrl;
 	console.log('#2 tema:', temaElementoEstilo.href);
-	temaElementoExercicio.href = estiloExercicio[tema];
+	temaElementoExercicio.href = estiloExercicio[checkbox.checked];
 	console.log('#2 tema EXERCICIO:', temaElementoExercicio.href);
 
 }

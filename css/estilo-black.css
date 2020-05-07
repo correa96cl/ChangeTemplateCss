@@ -95,6 +95,41 @@ header {
 .menu-principal a:hover {
 		opacity: 0.8;
 }
+
+.checkbox {
+	-webkit-appearance: none;
+	position: relative;
+	width: 113px;
+	height: 50px;
+	background-color: rgb(244, 189, 33);
+	border-radius: 50px;
+	outline: none;
+	background-image: url("../img/IMG-20200427-WA0020.jpg");
+	background-size: cover;
+  }
+  
+  .checkbox:before {
+	content: "";
+	position: absolute;
+	top: 0;
+	left: 0;
+	height: 50px;
+	width: 50px;
+	background-color: rgb(244, 189, 33);
+	border-radius: 50px;
+  }
+  
+  .checkbox:checked {
+	background-image: url("../img/CIR15-00281.jpg");
+	transition: background-image .90s;
+  
+  }
+  
+  .checkbox:checked:before {
+	transform: translate(100%);
+  	transition: all .9s;
+  	background-color: navy;
+  }
 		
 		
 .rodape {
@@ -104,6 +139,18 @@ header {
     padding: 1.5625rem 5rem;
     text-transform: lowercase;
 	
+}
+
+.rodape img{
+	width: 3%;
+	position: relative;
+	filter: grayscale(1);
+
+}
+
+.rodape img:hover{
+	transition: all .2s linear;
+	filter: none;
 }
 
 .course-card{
